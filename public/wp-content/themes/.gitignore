@@ -1,3 +1,11 @@
-# ignore everything except .gitignore and custom theme folders:
+# ignore everything 
 *
+
+# except .gitignore
 !.gitignore
+
+# and directories, so we can recurse into them
+!**/
+
+# and these custom themes and child themes
+!onesheep-child/**/*.*
