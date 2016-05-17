@@ -1,0 +1,28 @@
+{
+    "name": "onesheep/install-test",
+    "description": "OneSheep public website",
+    "type": "project",
+
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+
+    "require": {
+        "johnpbloch/wordpress-core-installer": "^0.2",
+        "johnpbloch/wordpress": "^4.5",
+        "wpackagist-theme/hueman": "*",
+        "wpackagist-plugin/cookie-law-info": "^1.5"
+    },
+
+    "extra": {
+        "installer-paths": {
+            "public/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "public/wp-content/themes/{$name}/": ["type:wordpress-theme"]
+        },
+        "wordpress-install-dir": "public/wordpress"
+    }
+
+}

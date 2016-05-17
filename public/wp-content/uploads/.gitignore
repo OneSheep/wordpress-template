@@ -1,0 +1,4 @@
+# this file enables us to deploy an empty uploads folder
+
+*
+!.gitignore
